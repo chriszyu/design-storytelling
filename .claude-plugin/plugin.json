@@ -1,0 +1,19 @@
+{
+  "name": "design-storytelling",
+  "description": "An open-source agent skill for helping designers turn complex product work into clear, compelling stories.",
+  "author": {
+    "name": "Chris Yu",
+    "url": "https://www.chriszyu.com/"
+  },
+  "homepage": "https://www.chriszyu.com/writing/storytelling-for-ux-designers",
+  "repository": "https://github.com/chriszyu/design-storytelling",
+  "license": "MIT",
+  "keywords": [
+    "design-storytelling",
+    "portfolio",
+    "case-studies",
+    "product-design",
+    "design-leadership",
+    "presentations"
+  ]
+}
