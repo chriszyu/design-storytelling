@@ -10,6 +10,14 @@ The skill acts like an experienced design leader: it helps find the story in mes
 
 The canonical public foundation for the methodology is [Storytelling for UX Designers](https://www.chriszyu.com/writing/storytelling-for-ux-designers). This repository is the canonical source for the Agent Skill.
 
+## Works with
+
+- **Codex** and **Claude Code** through the canonical `SKILL.md`.
+- **Cursor**, **Codex / OpenAI plugins**, and other [Agent Plugins](https://agent-plugins.org/) clients through the portable root manifest.
+- Other Agent Skills-compatible agents that support the standard `skills/<name>/SKILL.md` layout.
+
+There is still only one implementation of the skill: [`skills/design-storytelling/SKILL.md`](skills/design-storytelling/SKILL.md). Platform manifests provide discovery metadata and point compatible agents to that same source.
+
 ## What it helps with
 
 - **Find:** reveal the strongest story in rough notes, artifacts, or project history.
@@ -25,6 +33,14 @@ The core method is:
 The skill may use `Situation -> Tension -> Insight -> Decision -> Change` to diagnose missing causal logic. It is not a required five-part template.
 
 ## Install
+
+The shortest cross-agent installation path is the Skills CLI:
+
+```bash
+npx skills add chriszyu/design-storytelling --skill design-storytelling
+```
+
+Choose Codex, Claude Code, Cursor, or another supported agent when prompted. The skill is also listed publicly on [skills.sh](https://skills.sh/chriszyu/design-storytelling/design-storytelling).
 
 ### GitHub CLI
 
@@ -42,19 +58,7 @@ For Claude Code:
 gh skill install chriszyu/design-storytelling design-storytelling --agent claude-code --scope user
 ```
 
-Pin the first release by adding `--pin v0.1.0`.
-
-### Skills CLI
-
-The community [Skills CLI](https://www.skills.sh/docs/cli) supports Codex, Claude Code, and other Agent Skills hosts:
-
-```bash
-npx skills add chriszyu/design-storytelling --skill design-storytelling
-```
-
-The CLI prompts for the target agent and installation scope. It collects anonymous telemetry by default; set `DISABLE_TELEMETRY=1` if you prefer to opt out.
-
-The skill is also listed publicly on [skills.sh](https://skills.sh/chriszyu/design-storytelling/design-storytelling).
+Pin the first release by adding `--pin v0.1.0`. The Skills CLI collects anonymous telemetry by default; set `DISABLE_TELEMETRY=1` if you prefer to opt out.
 
 ### Manual installation
 
@@ -104,6 +108,8 @@ See [the example uses](skills/design-storytelling/examples/example-uses.md) for 
 - `skills/design-storytelling/references/critique-rubric.md` — a focused diagnostic for existing stories.
 - `skills/design-storytelling/examples/example-uses.md` — realistic prompts and a worked transformation.
 - `skills/design-storytelling/agents/openai.yaml` — optional Codex interface metadata.
+- `plugin.json` — portable Agent Plugin metadata for Cursor, OpenAI, GitHub Copilot, and compatible clients.
+- `.claude-plugin/plugin.json` — Claude Code plugin metadata that exposes the same canonical skill.
 - `SECURITY.md` — privacy and safe-use guidance.
 
 The skill contains Markdown instructions only. It runs no code, sends no network requests, collects no telemetry, and requires no API keys. The agent host you use may have its own data and privacy behavior, so follow your organization's policies before sharing confidential work.
