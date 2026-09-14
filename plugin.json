@@ -1,0 +1,42 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "design-storytelling",
+  "description": "An open-source agent skill for helping designers turn complex product work into clear, compelling stories.",
+  "author": {
+    "name": "Chris Yu",
+    "url": "https://www.chriszyu.com/"
+  },
+  "homepage": "https://www.chriszyu.com/writing/storytelling-for-ux-designers",
+  "repository": "https://github.com/chriszyu/design-storytelling",
+  "license": "MIT",
+  "keywords": [
+    "design-storytelling",
+    "portfolio",
+    "case-studies",
+    "product-design",
+    "design-leadership",
+    "presentations"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Design Storytelling",
+        "shortDescription": "Turn complex product work into clear, compelling stories",
+        "longDescription": "Find, structure, critique, adapt, and rehearse design stories for portfolio case studies, product narratives, presentations, design rationale, business impact, and leadership communication.",
+        "developerName": "Chris Yu",
+        "category": "Productivity",
+        "capabilities": [
+          "Design storytelling",
+          "Portfolio case studies",
+          "Presentation critique"
+        ],
+        "websiteURL": "https://www.chriszyu.com/writing/storytelling-for-ux-designers",
+        "defaultPrompt": [
+          "Help me find the strongest story in these project notes.",
+          "Critique this design case study for a hiring panel.",
+          "Adapt this product story for a leadership audience."
+        ]
+      }
+    }
+  }
+}
