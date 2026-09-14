@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design Storytelling"
+  short_description: "Find, structure, critique, adapt, and rehearse stories"
+  default_prompt: "Use $design-storytelling to find the decision-ready story in this design work."
