@@ -42,8 +42,6 @@ For Claude Code:
 gh skill install chriszyu/design-storytelling design-storytelling --agent claude-code --scope user
 ```
 
-Pin the first release by adding `--pin v0.1.0`.
-
 ### Skills CLI
 
 The community [Skills CLI](https://www.skills.sh/docs/cli) supports Codex, Claude Code, and other Agent Skills hosts:
@@ -54,12 +52,14 @@ npx skills add chriszyu/design-storytelling --skill design-storytelling
 
 The CLI prompts for the target agent and installation scope. It collects anonymous telemetry by default; set `DISABLE_TELEMETRY=1` if you prefer to opt out.
 
+The skill is also listed publicly on [skills.sh](https://skills.sh/chriszyu/design-storytelling/design-storytelling).
+
 ### Manual installation
 
 Clone the repository, then copy the skill folder into the personal skills directory used by your agent:
 
 ```bash
-git clone --branch v0.1.0 https://github.com/chriszyu/design-storytelling.git
+git clone https://github.com/chriszyu/design-storytelling.git
 cp -R design-storytelling/skills/design-storytelling ~/.codex/skills/design-storytelling
 ```
 
