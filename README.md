@@ -13,7 +13,7 @@ The canonical public foundation for the methodology is [Storytelling for UX Desi
 ## Works with
 
 - **Codex** and **Claude Code** through the canonical `SKILL.md`.
-- **Cursor**, **Codex / OpenAI plugins**, and other [Agent Plugins](https://agent-plugins.org/) clients through the portable root manifest.
+- **Cursor**, **OpenAI plugins (including Codex)**, **GitHub Copilot / VS Code**, and other [Agent Plugins](https://agent-plugins.org/) clients through the portable root manifest.
 - Other Agent Skills-compatible agents that support the standard `skills/<name>/SKILL.md` layout.
 
 There is still only one implementation of the skill: [`skills/design-storytelling/SKILL.md`](skills/design-storytelling/SKILL.md). Platform manifests provide discovery metadata and point compatible agents to that same source.
